@@ -29,32 +29,32 @@ app.use(
 );
 
 // Health check endpoint
-app.get("/make-server-4c493c62/health", (c) => {
+app.get("/smart-function/health", (c) => {
   return c.json({ status: "ok" });
 });
 
 // Auth routes
-app.route("/make-server-4c493c62/auth", authRoutes);
+app.route("/smart-function/auth", authRoutes);
 
 // Tutorial routes (public)
-app.route("/make-server-4c493c62/tutorials", tutorialRoutes);
+app.route("/smart-function/tutorials", tutorialRoutes);
 
 // Tutorial admin routes (upload/delete)
-app.route("/make-server-4c493c62/tutorials/admin", tutorialAdminRoutes);
+app.route("/smart-function/tutorials/admin", tutorialAdminRoutes);
 
 // A3 Reports routes
-app.route("/make-server-4c493c62/a3-reports", a3ReportsRouter);
+app.route("/smart-function/a3-reports", a3ReportsRouter);
 
 // VSM routes
-app.route("/make-server-4c493c62/vsm", vsmRouter);
+app.route("/smart-function/vsm", vsmRouter);
 
 // QFD routes
-app.route("/make-server-4c493c62/qfd", qfdRoutes);
+app.route("/smart-function/qfd", qfdRoutes);
 
 // Hoshin Kanri routes
-app.route("/make-server-4c493c62/hoshin", hoshinRoutes);
+app.route("/smart-function/hoshin", hoshinRoutes);
 
 // AI Test routes
-app.route("/make-server-4c493c62/ai-test", aiTestRoutes);
+app.route("/smart-function/ai-test", aiTestRoutes);
 
 Deno.serve(app.fetch);
