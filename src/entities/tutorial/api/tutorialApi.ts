@@ -1,7 +1,7 @@
 import { projectId, publicAnonKey } from '../../../utils/supabase/info';
 import type { Tutorial, UserVideoProgress, TutorialWithProgress } from '../model/types';
 
-const SERVER_URL = `https://${projectId}.supabase.co/functions/v1/make-server-1c191bcf`;
+const SERVER_URL = `https://${projectId}.supabase.co/functions/v1/smart-function`;
 
 /**
  * Получить список всех туториалов с прогрессом пользователя

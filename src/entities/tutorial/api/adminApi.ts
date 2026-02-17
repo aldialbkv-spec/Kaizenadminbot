@@ -1,7 +1,7 @@
 import { projectId, publicAnonKey } from '../../../utils/supabase/info';
 import type { Tutorial } from '../model/types';
 
-const SERVER_URL = `https://${projectId}.supabase.co/functions/v1/make-server-1c191bcf`;
+const SERVER_URL = `https://${projectId}.supabase.co/functions/v1/smart-function`;
 
 interface UploadVideoData {
   file: File;

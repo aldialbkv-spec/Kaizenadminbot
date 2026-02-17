@@ -1,7 +1,7 @@
 import { projectId, publicAnonKey } from '../../../utils/supabase/info';
 import type { TestTemplate, TestHistoryItem } from '../model/types';
 
-const BASE_URL = `https://${projectId}.supabase.co/functions/v1/make-server-1c191bcf/ai-test`;
+const BASE_URL = `https://${projectId}.supabase.co/functions/v1/smart-function/ai-test`;
 
 /**
  * Получить список шаблонов тестов
